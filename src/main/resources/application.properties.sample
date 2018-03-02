@@ -1,0 +1,22 @@
+#####
+## Configura��o para usar o Datasource via JNDI
+####
+spring.datasource.jndi-name=java:jdbc/nome-do-datasource
+spring.datasource.driver-class-name=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.show-sql=true
+spring.jpa.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect
+
+
+#####
+##	A Configura��o abaixo habilita o banco de dados em mem�ria
+#####
+# H2
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+# Datasource
+spring.datasource.url=jdbc:h2:file:~/test
+spring.datasource.username=sa
+spring.datasource.password=
+spring.datasource.driver-class-name=org.h2.Driver
+spring.jpa.show-sql=true
+#
